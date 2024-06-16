@@ -1,11 +1,11 @@
 import './App.css';
 import Search from './search.js';
+import Weather from './weather.js';
 
 function App() {
   return (
     <div className="App">
-      <h1>Weather App (ish)</h1>
-      <Search />
+      <Weather/>
       <a href="https://github.com/JLL-5199/react-weather-app-june24.git">GitHub Repository</a>
     </div>
   );
