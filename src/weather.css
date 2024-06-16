@@ -16,9 +16,8 @@
     margin: 20px 0px 0px 0px;
 }
 
-.Weather img {
-    height: 64px;
-    margin-right:10px;
+.Weather canvas {
+    margin:0px 0px 0px 10px;
 }
 
 .Weather .degree {
@@ -26,6 +25,7 @@
     font-size:64px;
     line-height: 64px;
     font-weight: 400;
+    margin-left: 20px;
 }
 
 .Weather .units{

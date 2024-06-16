@@ -16,7 +16,7 @@ function handleSearch(response){
         wind: response.data.wind.speed,
         date: new Date(response.data.dt * 1000),
         city:response.data.name,
-        icon:`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+        icon:response.data.weather[0].icon,
         description: response.data.weather[0].description,
     })
 }
