@@ -1,5 +1,4 @@
-import './App.css';
-import Search from './search.js';
+import './App.css';  
 import Weather from './weather.js';
 
 function App() {
