@@ -16,16 +16,17 @@
     margin: 20px 0px 0px 0px;
 }
 
-.Weather canvas {
-    margin:0px 0px 0px 10px;
+.Weather canvas{
+    text-align: center;
+    padding-top: 10px;
 }
 
 .Weather .degree {
     color: rgb(33, 33, 33);
-    font-size:64px;
+    font-size:55px;
     line-height: 64px;
     font-weight: 400;
-    margin-left: 20px;
+    text-align: left;
 }
 
 .Weather .units{
