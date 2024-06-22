@@ -16,9 +16,13 @@
     margin: 20px 0px 0px 0px;
 }
 
-.Weather canvas{
+.Weather img{
     text-align: center;
-    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.mainTemperature{
+    text-align: left;
 }
 
 .Weather .degree {

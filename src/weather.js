@@ -12,20 +12,20 @@ function handleSearch(response){
     console.log(response.data);
     setWeatherData({
         ready:true,
-        temperature:response.data.main.temp,
-        humidity: response.data.main.humidity,
+        temperature:response.data.temperature.current,
+        humidity: response.data.temperature.humidity,
         wind: response.data.wind.speed,
-        date: new Date(response.data.dt * 1000),
-        city:response.data.name,
-        icon:response.data.weather[0].icon,
-        description: response.data.weather[0].description,
-        coordinates:response.data.coord,
+        date: new Date(response.data.time * 1000),
+        city:response.data.city,
+        icon:response.data.condition.icon_url,
+        description: response.data.condition.description,
+        coordinates:response.data.coordinates,
     })
 }
 
 function search(){
-const apiKey="f3009e4852fa0a079dab291dabf020c4"; 
-let apiURL=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+const apiKey="7a45btfdd9a2a5b0bb56a376f3of7ede"; 
+let apiURL=`https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 axios.get(apiURL).then(handleSearch);
 
 }
